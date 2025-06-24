@@ -110,6 +110,8 @@ class Beam:
             screen.blit(self.img, self.rct)    
 
 
+
+
 class Bomb:
     """
     爆弾に関するクラス
@@ -156,6 +158,8 @@ class Score:
     def update(self, screen):
         self.img = self.fonto.render(f"スコア:{self.score}", True, self.color)
         screen.blit(self.img, self.rect)
+
+
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
